@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            grid-template-columns:  6% 60% 34% ;
+            grid-template-rows:  70vh 45vh 100vh 160vh 20vh ;
+            background-color: 
+        }
+        .content{
+            grid-column-start:2 ;
+            grid-column-end: 4;
+        }
+        .navbar img{
+            height: 100px ;
+            width: 100px ;
+        }
+        .navbar{
+            background-color: #c69963;
+            grid-row-start: 1 ;
+            grid-row-end: 8;
+        }
+        #header{
+            background: url(./hero.jpeg)  no-repeat center center/cover ;
+           padding: 50px;
+           
+
+        }
+        p{
+            margin-top: 100px;
+            font-size: 30px;
+            color: #c69963;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 45px;
+            color: #fff;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo01{
+            margin:0px 300px ;
+             
+            height: 80px;
+            width:280px;
+        }
+        button{
+            margin-top: 20px;
+            height: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 230px;
+            background-color: #c69963;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+        }
+        button:hover{
+            background-color: #edc594;
+            color: #fff;
+        }
+        .seen{
+            color: #fff;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .news img{
+            margin: 28px 35px;
+            width: 180px;
+            height: 30px;
+        }
+        .User{
+            background-color: black;
+            color: #fff;
+            text-align: center;
+           padding-top: 50px;
+            
+        }
+        h2{
+            font-size: 60px;
+        }
+        .User img{
+            
+            height: 6rem;
+            width: 6rem;
+            border-radius: 100%;
+        }
+        .User p{
+            font-size: 20px;
+            margin-top: 0px;
+            padding-top: 20px;
+            color: #fff;
+        }
+        .content{
+            background-color: #ffffff;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20% 20% 20%;
+            grid-template-rows: 220px 220px;
+           
+        }
+
+        .content img{
+           justify-content: center;
+            margin-left: 120px;
+            height: 70px;
+            width: 70px;
+        }
+        .content p{
+            padding: 0;
+            margin: 0;
+            font-weight: lighter;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:16px;
+            text-align: center;
+            color: #333;
+        }
+        .box-01{
+            padding: 20px;
+            padding-top: 40px;
+        }
+        .box-02{
+            padding: 20px;
+            padding-top: 40px;
+        }
+
+        .box-03{
+            padding: 20px;
+            padding-top: 40px;
+        }
+        .box-04{
+            padding: 20px;
+            padding-top: 40px;
+        }
+        .box-05{
+            padding: 20px;
+            padding-top: 40px;
+        }
+        .box-06{
+            padding: 20px;
+            padding-top: 40px;
+        }
+        .content span{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: left;
+        }
+        .Services{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: #ffffff;
+            
+        }
+        .Services{
+            background-color: #ffffff;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20% 20% 20%;
+            grid-template-rows: 420px 420px;
+            padding: 30px;
+            margin: 50px 0px;
+           
+        }
+        h4{
+            background-color: #333;
+            width: 80%;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            top: -20px;
+            
+            left: 35px;
+            text-align: center;
+            padding: 10px;
+            height: 10%;
+            color: #fff;
+        }
+        .p{
+            text-align: center;
+        }
+        .rate{
+            font-size: 25px;
+        }
+        h5{
+            font-size: 28px;
+            margin-left: 25px;
+            background-color: #c69963;
+            width: 300px;
+            height: 35px;
+        }
+        .story{
+            grid-column-start:2 ;
+            grid-column-end: 4;
+        }
+        #intro-section{
+        height:100vh ;
+        }
+        .intro-img{
+        background: url("./back.jpg") no-repeat center center/cover ;
+        float: left;
+        min-height: 80vh;
+        width: 50%;
+        }
+    
+        .intro-content{
+        background-color: #f9f6f6;
+        float: right;
+        height: 80vh;
+        width: 50%;
+        font-size: 30px;
+        padding: 0px 100px;
+        padding-top: 200px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .intro-content h1{
+        color:#000000 ;
+        font-size: 30px;
+        }
+        .img-1{
+            margin: 150px;
+        }
+        .img-2{
+            position: relative;
+            margin-top: -1000px;
+            margin-left: 28rem;
+        }
+        #grid-container {
+           grid-column-start: 2;
+           grid-column-end: 4;
+           padding: 25px;
+           
+            background-color: #ffffff;
+        }
+        #grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows:10vh 10vh 10vh 10vh 10vh  10vh 10vh;
+            grid-gap: 0.7rem;
+        }
+        .gal-1{
+            background: url(./gal-1.jpeg)no-repeat center center/cover;
+            grid-column-start:1 ;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .gal-2{
+            background: url(./gal-2.jpeg)no-repeat center center/cover;
+            grid-column-start:3 ;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .gal-3{
+            background: url(./gal-3.jpeg)no-repeat center center/cover;
+            grid-column-start:6 ;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .gal-4{
+            background: url(./gal-4.jpeg)no-repeat center center/cover;
+            grid-column-start:7 ;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .gal-5{
+            background: url(./gal-5.jpeg)no-repeat center center/cover;
+            grid-column-start:1 ;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+        .gal-6{
+            background: url(./gal-6.jpeg)no-repeat center center/cover;
+            grid-column-start:3 ;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        .gal-7{
+            background: url(./gal-7.jpeg)no-repeat center center/cover;
+            grid-column-start:5 ;
+            grid-column-end:6 ;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .gal-8{
+            background: url(./gal-8.jpeg)no-repeat center center/cover;
+            grid-column-start:6 ;
+            grid-column-end:8 ;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .gal-9{
+            background: url(./gal-9.jpeg)no-repeat center center/cover;
+            grid-column-start:8 ;
+            grid-column-end:9 ;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+        .gal-10{
+            background: url(./gal-10.jpeg)no-repeat center center/cover;
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .gal-11{
+            background: url(./gal-11.jpeg)no-repeat center center/cover;
+            grid-column-start:2 ;
+            grid-column-end:4 ;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .gal-12{
+            background: url(./gal-12.jpeg)no-repeat center center/cover;
+            grid-column-start:4 ;
+            grid-column-end:5 ;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .gal-13{
+            background: url(./gal-13.jpeg)no-repeat center center/cover;
+            grid-column-start:5 ;
+            grid-column-end:8 ;
+            grid-row-start: 5;
+            grid-row-end: 8;
+        }
+        .gal-14{
+            background: url(./gal-14.jpeg)no-repeat center center/cover;
+            grid-column-start:8 ;
+            grid-column-end:9 ;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .footer{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: #333;
+           
+        }
+        .footer button {
+            margin-left: 20px;
+           background-color: #141414;
+           width: 15%;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 15px;
+           justify-content: center;
+                }
+        .footer button:hover{
+            background-color: #484646;
+            color: #fff;
+        }
+        .Copyright{
+            color: #fff;
+            font-size: 20px;
+            
+            margin-top: 85px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="main">
+        <div class="navbar"><img class="more" src="./morelogo.png"></div>
+        <div id="header"><img class="logo01"src="./logo.png" alt="logo"><br><p>Your Own Home</p><h1> The ultimate personal freedom</h1>
+        <button>VIEW OUR PROPERTIES </button>
+        <p class="seen">------------------------------  seen  ------------------------------</p>
+        <div class="news">
+        <img src="./logo-bbc.png" alt="logo">
+        <img src="./logo-bi.png" alt="logo">
+        <img src="./logo-forbes.png" alt="logo">
+        <img src="./logo-techcrunch.png" alt="logo">
+        </div>
+        </div>
+        <div class="User"> <h2>Top 3 relator</h2>            
+            <p ><img src="./realtor-1.jpeg" alt="user"><br>
+                <b>Eric XYz</b><br>
+                423 house</p> 
+                <br>
+                <p><img src="./realtor-2.jpeg" alt="user"><br>
+                <b>Eric XYz</b><br>
+                423 house sold</p>
+                <br>
+                <p> <img src="./realtor-3.jpeg" alt="user"> <br>
+                <b>Eric XYz</b><br>
+                423 house sold</p>
+              </div>
+        <div class="content"> 
+             <div class="box-01">
+                <img src="https://th.bing.com/th/id/R.76ac16c2ad43486434bba88acae991ec?rik=nnpCyTAv2WjkfA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_130845.png&ehk=afVdwfxweX0ELqDj%2f%2faugUjZ0l2VcapJNv5HboPJ6AY%3d&risl=&pid=ImgRaw&r=0" 
+                alt="logo" height="70px" width="70px">
+                <p><span>World's best luxury homes</span> <br>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus
+                    </p>
+             </div>
+             <div class="box-02">
+                <img src="https://cdn1.iconfinder.com/data/icons/football-trophies/48/World_Cup-512.png" 
+                alt="logo" height="90px" width="90px">
+                <p><span>Only the best properties</span><br>
+                    Voluptatum mollitia quaenao. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
+                    </p>
+             </div>
+             <div class="box-03">
+                <img src="https://freepngimg.com/thumb/logo/69583-logo-icon-location-map-free-download-png-hq.png" 
+                alt="logo" height="70px" width="70px">
+                <p><span>All homes in in top locations</span><br>
+                    Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.
+                    </p>
+             </div>
+             <div class="box-04">
+                <img src="https://cdn-icons-png.flaticon.com/512/323/323642.png" 
+                alt="logo" height="90px" width="90px">
+                <p><span>New home in one week</span><br>
+                    Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+             </div>
+             <div class="box-05">
+                <img src="https://th.bing.com/th/id/R.9b4cd6e8fbea983e82742b6d114f111c?rik=MSWncFuOz4YK9Q&pid=ImgRaw&r=0" 
+                alt="logo" height="90px" width="90px">
+                <p><span>Top 1% realtors</span><br>
+                    Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.
+                    </p> 
+             </div>
+             <div class="box-06">
+                <img src="https://static.thenounproject.com/png/102367-200.png" 
+                alt="logo" height="90px" width="90px">
+                <p><span>Secure payments on nexter</span><br>
+                    Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae
+                    </p>
+             </div>
+        </div>
+       
+        <div class="Services">
+            <div class="p">
+                <img src="./house-1.jpeg" alt="logo" height="200px "width="300px">
+                <h4>Beautiful Faily house</h4><br>
+                <div class="rate">USA &nbsp; &nbsp;&nbsp;&nbsp; 5Rooms <br>
+                    35m &nbsp; &nbsp;&nbsp;&nbsp;  $120,000,0</div><br>
+                    <h5>Contact Retailer</h5>
+            </div>
+            <div class="p">
+                <img src="./house-2.jpeg" alt="logo" height="200px "width="300px">
+                <h4>Beautiful Faily house</h4><br>
+                <div class="rate">USA &nbsp; &nbsp;&nbsp;&nbsp; 5Rooms <br>
+                    35m &nbsp; &nbsp;&nbsp;&nbsp;  $120,000,0</div><br>
+                    <h5>Contact Retailer</h5>
+            </div>
+            <div class="p">
+                <img src="./house-3.jpeg" alt="logo" height="200px "width="300px">
+                <h4>Beautiful Faily house</h4><br>
+                <div class="rate">USA &nbsp; &nbsp;&nbsp;&nbsp; 5Rooms <br>
+                    35m &nbsp; &nbsp;&nbsp;&nbsp;  $120,000,0</div><br>
+                    <h5>Contact Retailer</h5>
+            </div>
+            <div class="p">
+                <img src="./house-5.jpeg" alt="logo" height="200px "width="300px">
+                <h4>Beautiful Faily house</h4><br>
+                <div class="rate">USA &nbsp; &nbsp;&nbsp;&nbsp; 5Rooms <br>
+                    35m &nbsp; &nbsp;&nbsp;&nbsp;  $120,000,0</div><br>
+                <h5>Contact Retailer</h5>
+            </div>
+            <div class="p">
+                <img src="./house-6.jpeg" alt="logo" height="200px "width="300px">
+                <h4>Beautiful Faily house</h4><br>
+                <div class="rate">USA &nbsp; &nbsp;&nbsp;&nbsp; 5Rooms <br>
+                    35m &nbsp; &nbsp;&nbsp;&nbsp;  $120,000,0</div><br>
+                    <h5>Contact Retailer</h5>
+            </div>
+            <div class="p">
+                <img src="./house-1.jpeg" alt="logo" height="200px "width="300px">
+                <h4>Beautiful Faily house</h4><br>
+                <div class="rate">USA &nbsp; &nbsp;&nbsp;&nbsp; 5Rooms <br>
+                    35m &nbsp; &nbsp;&nbsp;&nbsp;  $120,000,0</div><br>
+                    <h5>Contact Retailer</h5>
+            </div>
+        </div>
+        <div class="story">
+            
+
+            <div class="intro-img">
+                <img class="img-1" src="./story-1.jpeg"height="300px" width="500px">>
+                <img class="img-2"src="./story-2.jpeg" height="300px" width="500px">
+            </div>
+            <div class="intro-content">
+                    <p>HAPPY CUSTOMER</p>
+                    <h1>
+                      "The best decision of
+                      our lives"
+                    </h1>
+                    <div class="contentStory">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                      distinctio necessitatibus pariatur voluptatibus. Quidem consequatur
+                      harum volupta!
+                    </div>
+                    <button>Find Your Own Home</button>
+        
+    </div>
+        <div id="grid-container">
+            <div class="gal-1">
+        
+            </div>
+            <div class="gal-2">
+                
+            </div>
+            <div class="gal-3"></div>
+            <div class="gal-4"></div>
+            <div class="gal-5"></div>
+            <div class="gal-6"></div>
+            <div class="gal-7"></div>
+            <div class="gal-8"></div>
+            <div class="gal-9"></div>
+            <div class="gal-10"></div>
+            <div class="gal-11"></div>
+            <div class="gal-12"></div>
+            <div class="gal-13"></div>
+            <div class="gal-14"></div>
+            </div>
+        <div class="footer">
+            <button>FIND YOUR DREAM HOME</button>
+            <button>REQUESET PROPOSAL</button>
+            <button>DOWNLOAD HOME PLANNER</button>
+            <button>CONTACT US</button>
+            <button>SUBMIT YOUR PROPERTY</button>
+            <button>COME WORK WITH US</button>
+            <div class="Copyright">© Copyright 2017 by Jonas Schmedtmann. Feel free to use this project for your own purposes. This does NOT apply if you plan to produce your own course or tutorials based on this project </div>
+        </div>
+        
+     </div>
+    
+  
+  </div>
+</body>
+</html>
